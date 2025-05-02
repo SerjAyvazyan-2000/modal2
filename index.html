@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GPT Premium Modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<button class="open-modal-btn">Открыть модалку</button>
+
+<div class="overlay" id="modalOverlay">
+    <div class="modal">
+        <div class="badge">
+            <div class="badge-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                    <g filter="url(#filter0_dii_7067_16926)">
+                        <path d="M16.1433 3.024C16.3171 1.63585 14.5733 0.877826 13.6768 1.95184L4.91937 12.4438C4.15763 13.3564 4.80655 14.7433 5.99528 14.7433H14.3043C14.8664 14.7433 15.3012 15.2359 15.2314 15.7937L14.5824 20.9768C14.4086 22.365 16.1525 23.123 17.0489 22.049L25.8064 11.5571C26.5681 10.6445 25.9192 9.25756 24.7305 9.25756H16.4215C15.8594 9.25756 15.4246 8.76489 15.4944 8.20718L16.1433 3.024Z"
+                              fill="url(#paint0_linear_7067_16926)"></path>
+                    </g>
+                    <defs>
+                        <filter id="filter0_dii_7067_16926" x="0.970383" y="-0.774642" width="27.3834" height="28.47"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                           result="hardAlpha"></feColorMatrix>
+                            <feOffset dx="-0.70073" dy="2.21898"></feOffset>
+                            <feGaussianBlur stdDeviation="1.45985"></feGaussianBlur>
+                            <feComposite in2="hardAlpha" operator="out"></feComposite>
+                            <feColorMatrix type="matrix"
+                                           values="0 0 0 0 0.933304 0 0 0 0 0.664391 0 0 0 0 0.26102 0 0 0 0.37 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                     result="effect1_dropShadow_7067_16926"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_7067_16926"
+                                     result="shape"></feBlend>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                           result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="-2.21898"></feOffset>
+                            <feGaussianBlur stdDeviation="1.57664"></feGaussianBlur>
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+                            <feColorMatrix type="matrix"
+                                           values="0 0 0 0 0.674971 0 0 0 0 0.372803 0 0 0 0 0.202833 0 0 0 0.47 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="shape" result="effect2_innerShadow_7067_16926"></feBlend>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                           result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="-0.817518"></feOffset>
+                            <feGaussianBlur stdDeviation="0.291971"></feGaussianBlur>
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+                            <feColorMatrix type="matrix"
+                                           values="0 0 0 0 1 0 0 0 0 0.957028 0 0 0 0 0.804673 0 0 0 0.6 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="effect2_innerShadow_7067_16926"
+                                     result="effect3_innerShadow_7067_16926"></feBlend>
+                        </filter>
+                        <linearGradient id="paint0_linear_7067_16926" x1="10.4353" y1="1.34134" x2="17.5711" y2="23.3105"
+                                        gradientUnits="userSpaceOnUse">
+                            <stop offset="0.0001" stop-color="#FFED8C"></stop>
+                            <stop offset="1" stop-color="#F4B335"></stop>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <span>GPT-OPEN PREMIUM</span>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="images/plus1.svg" alt="">
+                </div>
+                Мгновенные ответы без ожидания
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="images/plus2.svg" alt="">
+                </div>
+                Удобный дизайн и темная тема
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="images/plus3.svg" alt="">
+                </div>
+                Сохранение полной истории сообщений
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="images/plus4.svg" alt="">
+
+                </div>
+                Ранний доступ к новым функциям
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="images/plus5.svg" alt="">
+
+                </div>
+                Безлимитное количество запросов
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="images/plus6.svg" alt="">
+
+                </div>
+                Загрузка документов и изображений
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="images/plus7.svg" alt="">
+
+                </div>
+                Генерация изображений
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="images/plus8.svg" alt="">
+
+                </div>
+                Специальный значок в сообществе
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="images/plus9.svg" alt="">
+
+                </div>
+                Нет лимита по символам
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="images/plus10.svg" alt="">
+
+                </div>
+                Не отображается реклама
+            </div>
+        </div>
+
+        <div class="price-section">
+            <strong>Три месяца</strong><br/>
+            <s>4 500 ₽</s> <strong>3 450 ₽</strong> / 3 мес.<br/>
+            <div class="price">1 150 ₽ в месяц</div>
+        </div>
+        <label >
+            <input type="email" value="ovk34797@jioso.com" placeholder="Ваш email"/>
+        </label>
+
+
+
+        <div class="checkboxes">
+            <label><input type="checkbox"/> Я согласен с условиями</label>
+            <label><input type="checkbox"/> Получать новости и обновления</label>
+        </div>
+
+        <button class="btn-buy">Купить</button>
+        <div class="promo">Ввести промокод</div>
+    </div>
+</div>
+
+<script>
+    const openBtn = document.querySelector('.open-modal-btn');
+    const overlay = document.getElementById('modalOverlay');
+
+    openBtn.addEventListener('click', () => {
+        overlay.classList.add('active');
+    });
+
+
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            overlay.classList.remove('active');
+        }
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+body {
+    font-family: 'Open Sans',sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+}
+
+.open-modal-btn {
+    margin: 40px auto;
+    display: block;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.modal label{
+    width: 100%;
+    display: block;
+}
+
+.modal label input[type="email"] {
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    width: -webkit-fill-available;
+}
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    background: #fff;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    padding: 24px;
+    position: relative;
+    text-align: left;
+    animation: fadeInUp 0.3s ease;
+    overflow: auto;
+    max-height: 90vh;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+}
+
+.badge {
+    background: #ffe600;
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 12px;
+    display: flex;
+    font-weight: 600;
+    margin-bottom: 16px;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.badge span{
+    color:  #212529;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+.badge-icon{
+    border-radius: 5.458px;
+    background:  #FFF;
+    box-shadow: 0px -2.205px 4.41px 0px rgba(0, 0, 0, 0.25) inset, 0px 6.322px 6.322px 0px rgba(0, 0, 0, 0.15);
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    align-items: center;
+}
+.badge-icon  svg {
+    width: 32px;
+    height: 32px;
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 48%;
+    font-size: 14px;
+    color: #333;
+    max-width: 210px;
+
+}
+
+.feature-icon {
+    display: flex;
+}
+
+.price-section {
+    background: #f5f3ff;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.price-section p {
+    margin: 4px 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+
+.checkboxes {
+    margin-top: 12px;
+}
+
+.checkboxes label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.checkboxes input {
+    margin-right: 8px;
+}
+
+.btn-buy {
+    width: 100%;
+    margin-top: 16px;
+    background: #5b21b6;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.promo {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #555;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .feature {
+        width: 100%;
+    }
+    .modal{
+        padding: 15px;
+    }
+}
