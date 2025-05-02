@@ -196,8 +196,9 @@ body {
 }
 
 @media (max-width: 480px) {
-    .feature {
-        width: 100%;
+
+    .feature{
+        font-size: 12px;
     }
     .modal{
         padding: 15px;
